@@ -36,7 +36,7 @@ export default function Home() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
                   </span>
-                  Real-time Weather Updates
+                  Real-time Weather Application
                   <MoveRight className="w-4 h-4" />
                 </div>
               </div>
@@ -47,7 +47,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
-                Get accurate weather updates for any city worldwide with our beautiful and intuitive interface
+                Get accurate weather for any city worldwide with our beautiful and intuitive application.
               </p>
             </div>
             <WeatherDashboard />
