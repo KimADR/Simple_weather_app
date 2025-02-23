@@ -8,6 +8,7 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
+  
   theme: {
     container: {
       center: true,
@@ -46,6 +47,16 @@ module.exports = {
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
+        },
+        backgroundImage: {
+          'hero-pattern': "url('/weather-bg.jpg')",
+          'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        },
+        animation: {
+          'fade-in': 'fadeIn 0.5s ease-out forwards',
+          'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+          'bounce-subtle': 'bounceSoft 3s ease-in-out infinite',
+          'shimmer': 'shimmer 2s infinite',
         },
         card: {
           DEFAULT: "hsl(var(--card))",

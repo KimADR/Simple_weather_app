@@ -30,7 +30,7 @@ export default function SearchForm({ onSearch }: SearchFormProps) {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-gray-300"
       />
-      <Button type="submit" className="bg-white/10 hover:bg-white/20 text-white">
+      <Button type="submit" size="icon" className="bg-white/10 hover:bg-white/20 text-white">
         <Search className="h-4 w-4" />
         <span className="sr-only">Search</span>
       </Button>

@@ -12,6 +12,8 @@ export default function UnitToggle({ unit, onUnitChange }: UnitToggleProps) {
   return (
     <div className="flex items-center space-x-2 animate-fade-in">
       <Button
+        variant={unit === "metric" ? "default" : "outline"}
+        size="sm"
         onClick={() => onUnitChange("metric")}
         className={
           unit === "metric"
@@ -22,6 +24,8 @@ export default function UnitToggle({ unit, onUnitChange }: UnitToggleProps) {
         °C
       </Button>
       <Button
+        variant={unit === "imperial" ? "default" : "outline"}
+        size="sm"
         onClick={() => onUnitChange("imperial")}
         className={
           unit === "imperial"

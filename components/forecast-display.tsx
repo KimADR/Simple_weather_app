@@ -1,9 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import type { WeatherUnit } from "./weather-dashboard"
+import type { ForecastData } from "@/lib/types"
 import WeatherIcon from "./weather-icon"
 import { Skeleton } from "@/components/ui/skeleton"
 import { Cloud, Droplets, Wind } from "lucide-react"
-import { ForecastData } from "@/lib/types"
 
 interface ForecastDisplayProps {
   forecast: ForecastData

@@ -7,7 +7,7 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const city = searchParams.get("city")
   const units = searchParams.get("units") || "metric"
-  const headersList = headers()
+  const headersList = await headers()
 
   if (!city) {
     return NextResponse.json({ error: "City parameter is required" }, { status: 400 })

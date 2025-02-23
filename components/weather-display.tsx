@@ -1,10 +1,10 @@
 import type React from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import type { WeatherUnit } from "./weather-dashboard"
+import type { WeatherData } from "@/lib/types"
 import WeatherIcon from "./weather-icon"
 import { Skeleton } from "@/components/ui/skeleton"
 import { Cloud, Droplets, Gauge, Thermometer, Wind, Sunrise, Sunset } from "lucide-react"
-import { WeatherData } from "@/lib/types"
 
 interface WeatherDisplayProps {
   weather: WeatherData

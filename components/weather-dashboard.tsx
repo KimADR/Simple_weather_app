@@ -7,7 +7,7 @@ import SearchForm from "./search-form"
 import WeatherDisplay from "./weather-display"
 import ForecastDisplay from "./forecast-display"
 import UnitToggle from "./unit-toggle"
-import { ForecastData, WeatherData } from "@/lib/types"
+import type { WeatherData, ForecastData } from "@/lib/types"
 
 export type WeatherUnit = "metric" | "imperial"
 
@@ -53,7 +53,7 @@ export default function WeatherDashboard() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
       <div className="flex flex-col sm:flex-row gap-4 justify-between items-center">
         <SearchForm onSearch={handleSearch} />
         <UnitToggle unit={unit} onUnitChange={handleUnitChange} />
